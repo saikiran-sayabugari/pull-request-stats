@@ -87,12 +87,12 @@ module.exports = async (params) => {
   const telemetry = new Telemetry({ core, isSponsor, telemetry: params.telemetry });
   if (isSponsor) core.info('Thanks for sponsoring this project! 💙');
 
-  try {
+/*  try {
     telemetry.start(params);
     await run({ ...params, isSponsor, octokit });
     telemetry.success();
   } catch (error) {
     telemetry.error(error);
     throw error;
-  }
+  } */
 };
